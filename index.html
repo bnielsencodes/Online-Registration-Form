@@ -3,6 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- 
+      CSS Styles
+    -->
+
+    <link
+      rel="stylesheet"
+      href="/Users/Bs/Documents/Documents - iMac/Coding Folders/Projects/TT Techdegree Projects/Online-Registration-Form/css/styles.css"
+    />
+
+    <!-- 
+      Normalize CSS
+    -->
+
+    <link
+      rel="stylesheet"
+      href="/Users/Bs/Documents/Documents - iMac/Coding Folders/Projects/TT Techdegree Projects/Online-Registration-Form/css/normalize.css"
+    />
+
+    <!-- 
+      Google Fonts
+    -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Online Registration Form</title>
   </head>
   <body>
@@ -15,16 +45,36 @@
         <p>Get the latest news on how your code is doing right in your inbox</p>
       </div>
     </header>
-    <!-- <div class="class-name"></div> -->
+    <div class="header-main-divider"></div>
     <main>
       <form action="">
         <fieldset>
           <legend>Contact Information</legend>
+
           <label for="name">Full Name</label><br />
-          <input type="text" id="name" name="full_name" value="" /><br />
+          <div class="inputwrapper">
+            <input
+              type="text"
+              id="name"
+              class="inputDataText"
+              name="full_name"
+              value=""
+              placeholder="Your Name"
+              required
+            />
+          </div>
 
           <label for="email">Email Address</label><br />
-          <input type="email" id="email" name="email_address" value="" /><br />
+          <div class="inputwrapper">
+            <input
+              type="email"
+              id="email"
+              name="email_address"
+              value=""
+              placeholder="example@website.com"
+              required
+            />
+          </div>
 
           <label for="telephone">Phone Number</label><br />
           <input
@@ -32,24 +82,42 @@
             id="telephone"
             name="telephone_number"
             value=""
+            placeholder="555-123-4567"
           /><br />
 
           <label for="address">Street Address</label><br />
-          <input type="address" id="address" name="address" value="" /><br />
+          <input
+            type="address"
+            id="address"
+            name="address"
+            value=""
+            placeholder="1234 Your Street"
+          /><br />
 
           <label for="city">City</label><br />
-          <input type="text" id="city" name="city" value="" /><br />
+          <input
+            type="text"
+            id="city"
+            name="city"
+            value=""
+            placeholder="Your City"
+          /><br />
 
           <label for="state">State</label><br />
-          <input type="select" id="state" name="state" /><br />
+          <input
+            type="select"
+            id="state"
+            name="state"
+            placeholder="Choose State"
+          /><br />
 
           <label for="zip_code">Zip Code</label><br />
           <input
             type="text"
             id="zip_code"
             name="zip_code"
-            value=""
-            inputmode="numeric"
+            maxlength="5"
+            placeholder="12345"
           /><br />
         </fieldset>
 
@@ -91,7 +159,12 @@
 
           <label for="other_topics">Other topics you'd like to hear about</label
           ><br />
-          <input type="textarea" id="other_topics" name="other_topics" />
+          <input
+            type="textarea"
+            id="other_topics"
+            name="other_topics"
+            placeholder="Other topics.."
+          />
         </fieldset>
 
         <button type="submit" value="">Sign Up</button>

@@ -1,5 +1,41 @@
-/* .class-name:after {
+/* =====================================
+  Universal Selectors
+=======================================*/
+
+* {
+  font-family: "Merriweather", serif;
+}
+
+/* =====================================
+  Line seperating header and main sections
+=======================================*/
+
+.header-main-divider:after {
   content: " ";
   display: block;
   border-bottom: 0.5px solid #9e9e9e;
-} */
+}
+
+/* =====================================
+  Required text for inside input fields
+=======================================*/
+
+.inputwrapper {
+  position: relative;
+}
+.inputwrapper::after {
+  content: "Required";
+  position: relative;
+  right: 8px;
+  font-size: 15px;
+  transform: translateY(-50%);
+  font-style: italic;
+  color: #ccc;
+}
+
+/* =====================================
+  Media Queries
+=======================================*/
+
+@media only screen and (min-width: 768px) {
+}

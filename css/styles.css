@@ -34,25 +34,6 @@
 }
 
 /* =====================================
-  Required text for inside input fields
-=======================================*/
-
-.input-required-wrapper {
-  position: relative;
-}
-
-.input-required-wrapper::after {
-  content: "Required";
-  position: relative;
-  left: 345px;
-  top: -65px;
-  font-size: 1.1rem;
-  transform: translateY(-50%);
-  font-style: italic;
-  color: #444;
-}
-
-/* =====================================
   Basic Styles
 =======================================*/
 
@@ -299,6 +280,25 @@ footer {
   .col-one,
   .col-two {
     display: flex;
+  }
+
+  /* =====================================
+  Required text for inside input fields
+=======================================*/
+
+  .input-required-wrapper {
+    position: relative;
+  }
+
+  .input-required-wrapper::after {
+    content: "Required";
+    position: relative;
+    left: 375px;
+    top: -34px;
+    font-size: 0.8rem;
+    transform: translateY(-50%);
+    font-style: italic;
+    color: #444;
   }
 }
 

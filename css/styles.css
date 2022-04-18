@@ -37,11 +37,11 @@
   Required text for inside input fields
 =======================================*/
 
-#input-required-wrapper {
+.input-required-wrapper {
   position: relative;
 }
 
-#input-required-wrapper::after {
+.input-required-wrapper::after {
   content: "Required";
   position: relative;
   left: 345px;
@@ -240,12 +240,12 @@ footer {
     height: 80px;
   }
 
-  #input-required-wrapper {
+  .input-required-wrapper {
     height: 70px;
     margin: 1px 0px 1px auto;
   }
 
-  #input-required-wrapper::after {
+  .input-required-wrapper::after {
     font-size: 0.8rem;
     left: 375px;
     top: -34px;

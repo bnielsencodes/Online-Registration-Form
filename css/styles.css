@@ -4,6 +4,7 @@
 
 * {
   font-family: "Merriweather", serif;
+  box-sizing: border-box;
 }
 
 /* =====================================
@@ -17,7 +18,8 @@
 #header-divider-one:after {
   content: " ";
   display: block;
-  border-bottom: 5px solid #242f40;
+  border-bottom: 5px solid #363636;
+  border-radius: 5px;
 }
 
 #header-divider-two {
@@ -27,13 +29,8 @@
 #header-divider-two:after {
   content: " ";
   display: block;
-  border-bottom: 3px solid #242f40;
-}
-
-#contact-newsletter-divider:after {
-  content: " ";
-  display: block;
-  border-bottom: 1px solid #242f40;
+  border-bottom: 3px solid #363636;
+  border-radius: 5px;
 }
 
 /* =====================================
@@ -52,7 +49,7 @@
   font-size: 1.1rem;
   transform: translateY(-50%);
   font-style: italic;
-  color: #000;
+  color: #444;
 }
 
 /* =====================================
@@ -101,10 +98,12 @@ form {
 
 #form-section-one-wrapper {
   background-color: #363636;
+  border-radius: 5px;
 }
 
-#form-section-two-wrapper {
-  background-color: #363636;
+.form-labels {
+  font-size: 1.2rem;
+  font-weight: 300;
 }
 
 .form-sections {
@@ -125,38 +124,68 @@ button {
   width: 100%;
 }
 
+/* .contact-info-inputs::placeholder,
+#other-topics::placeholder {
+  padding-left: 5px;
+} */
+
 .contact-info-inputs {
   height: 70px;
   margin: 22px 0 20px 0;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
+  padding-left: 10px;
 }
 
-.form-labels {
-  font-size: 1.2rem;
-  font-weight: 300;
+#choose-item {
+  color: ##757575;
 }
 
 #zip-code {
   width: 50%;
 }
 
+#form-section-two-wrapper {
+  background-color: #363636;
+  border-radius: 5px;
+  margin-top: 25px;
+}
+
+#newsletter-title {
+  margin-bottom: 10px;
+}
+
+.check-radio-wrappers {
+  padding-bottom: 20px;
+}
+
+.check-radio-inputs {
+  margin: 0px 13px 0px 5px;
+}
+
+#last-check-radio-wrapper {
+  padding-bottom: 40px;
+}
+
+#other-topics {
+  margin: 20px 0 15px;
+  padding: 7px 0 0 7px;
+}
+
 #submit-button {
   height: 87px;
   font-size: 1.7rem;
-  margin: 0 5px;
+  margin-top: 25px;
+  color: #cca43b;
+  background-color: #242f40;
 }
-
-/* LIGHT GRAY e5e5e5 */
-
-/* BLUE    242f40 */
-
-/*  DARK GRAY   363636 */
 
 footer {
   color: #fff;
   background-color: #242f40;
   text-align: center;
   font-size: 1.1rem;
+  margin-top: 45px;
+  padding: 10px 0px;
 }
 
 /* =====================================

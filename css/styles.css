@@ -7,30 +7,156 @@
 }
 
 /* =====================================
-  Line seperating header and main sections
+  Lines seperating sections
 =======================================*/
 
-.header-main-divider:after {
+#header-divider-one {
+  padding: 5px 15px 4px;
+}
+
+#header-divider-one:after {
   content: " ";
   display: block;
-  border-bottom: 0.5px solid #9e9e9e;
+  border-bottom: 5px solid #242f40;
+}
+
+#header-divider-two {
+  padding: 1px 15px 30px;
+}
+
+#header-divider-two:after {
+  content: " ";
+  display: block;
+  border-bottom: 3px solid #242f40;
+}
+
+#contact-newsletter-divider:after {
+  content: " ";
+  display: block;
+  border-bottom: 1px solid #242f40;
 }
 
 /* =====================================
   Required text for inside input fields
 =======================================*/
 
-.inputwrapper {
+#input-wrapper {
   position: relative;
 }
-.inputwrapper::after {
+
+#input-wrapper::after {
   content: "Required";
   position: relative;
-  right: 8px;
-  font-size: 15px;
+  left: 345px;
+  top: -65px;
+  font-size: 1.1rem;
   transform: translateY(-50%);
   font-style: italic;
-  color: #ccc;
+  color: #000;
+}
+
+/* =====================================
+  Basic Styles
+=======================================*/
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: #cca43b;
+  color: #fff;
+}
+
+header {
+  padding-bottom: 35px;
+}
+
+#website-title {
+  color: #fff;
+  background-color: #242f40;
+  text-align: center;
+  padding: 12px 0px;
+}
+
+#form-intro {
+  color: #363636;
+  text-align: center;
+  padding: 25px 0 1px;
+}
+
+#form-intro-p {
+  font-size: 1.2rem;
+  padding: 0px 30px;
+  font-weight: 300;
+}
+
+main {
+  margin: 0 15px;
+}
+
+form {
+  padding: 0;
+}
+
+#form-section-one-wrapper {
+  background-color: #363636;
+}
+
+#form-section-two-wrapper {
+  background-color: #363636;
+}
+
+.form-sections {
+  border: none;
+}
+
+.form-section-titles {
+  color: #cca43b;
+  margin: 20px 0 35px;
+}
+
+.contact-info-inputs,
+#other-topics,
+#button-wrapper,
+button {
+  border: hidden;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.contact-info-inputs {
+  height: 70px;
+  margin: 22px 0 20px 0;
+  font-size: 1.1rem;
+}
+
+.form-labels {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+#zip-code {
+  width: 50%;
+}
+
+#submit-button {
+  height: 87px;
+  font-size: 1.7rem;
+  margin: 0 5px;
+}
+
+/* LIGHT GRAY e5e5e5 */
+
+/* BLUE    242f40 */
+
+/*  DARK GRAY   363636 */
+
+footer {
+  color: #fff;
+  background-color: #242f40;
+  text-align: center;
+  font-size: 1.1rem;
 }
 
 /* =====================================

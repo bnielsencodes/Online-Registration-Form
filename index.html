@@ -37,137 +37,174 @@
   </head>
   <body>
     <header>
-      <div>
+      <div id="website-title">
         <h1>THE CODE REVIEW</h1>
       </div>
-      <div>
+      <div id="form-intro">
         <h2>Signup for our newsletter</h2>
-        <p>Get the latest news on how your code is doing right in your inbox</p>
+        <p id="form-intro-p">
+          Get the latest news on how your code is doing right in your inbox
+        </p>
       </div>
     </header>
-    <div class="header-main-divider"></div>
+    <div id="header-divider-one"></div>
+    <div id="header-divider-two"></div>
     <main>
       <form action="">
-        <fieldset>
-          <legend>Contact Information</legend>
+        <div id="form-section-one-wrapper">
+          <fieldset class="form-sections">
+            <legend>
+              <h2 class="form-section-titles">Contact Information</h2>
+            </legend>
 
-          <label for="name">Full Name</label><br />
-          <div class="inputwrapper">
+            <label for="name" class="form-labels">Full Name</label><br />
+            <div id="input-wrapper">
+              <input
+                type="text"
+                id="name"
+                class="contact-info-inputs"
+                name="full_name"
+                value=""
+                placeholder="Your Name"
+                required
+              />
+            </div>
+
+            <label for="email" class="form-labels">Email Address</label><br />
+            <div id="input-wrapper">
+              <input
+                type="email"
+                id="email"
+                class="contact-info-inputs"
+                name="email_address"
+                value=""
+                placeholder="example@website.com"
+                required
+              />
+            </div>
+
+            <label for="telephone" class="form-labels">Phone Number</label
+            ><br />
+            <input
+              type="telephone"
+              id="telephone"
+              class="contact-info-inputs"
+              name="telephone_number"
+              value=""
+              placeholder="555-123-4567"
+            /><br />
+
+            <label for="address" class="form-labels">Street Address</label
+            ><br />
+            <input
+              type="address"
+              id="address"
+              class="contact-info-inputs"
+              name="address"
+              value=""
+              placeholder="1234 Your Street"
+            /><br />
+
+            <label for="city" class="form-labels">City</label><br />
             <input
               type="text"
-              id="name"
-              class="inputDataText"
-              name="full_name"
+              id="city"
+              class="contact-info-inputs"
+              name="city"
               value=""
-              placeholder="Your Name"
-              required
-            />
-          </div>
+              placeholder="Your City"
+            /><br />
 
-          <label for="email">Email Address</label><br />
-          <div class="inputwrapper">
+            <label for="state" class="form-labels">State</label><br />
             <input
-              type="email"
-              id="email"
-              name="email_address"
+              type="select"
+              id="state"
+              class="contact-info-inputs"
+              name="state"
+              placeholder="Choose State"
+            /><br />
+
+            <label for="zip-code" class="form-labels">Zip Code</label><br />
+            <input
+              type="text"
+              id="zip-code"
+              class="contact-info-inputs"
+              name="zip_code"
+              maxlength="5"
+              placeholder="12345"
+            /><br />
+          </fieldset>
+        </div>
+
+        <div id="contact-newsletter-divider"></div>
+
+        <div id="form-section-two-wrapper">
+          <fieldset class="form-sections">
+            <legend><h2 class="form-section-titles">Newsletter</h2></legend>
+            <p class="form-labels">
+              Select the newsletters you would like to receive
+            </p>
+
+            <input
+              type="checkbox"
+              id="html-news"
+              name="selected_news"
               value=""
-              placeholder="example@website.com"
-              required
             />
-          </div>
+            <label for="html-news" class="form-labels">HTML News</label><br />
 
-          <label for="telephone">Phone Number</label><br />
-          <input
-            type="telephone"
-            id="telephone"
-            name="telephone_number"
-            value=""
-            placeholder="555-123-4567"
-          /><br />
+            <input
+              type="checkbox"
+              id="css-news"
+              name="selected_news"
+              value=""
+            />
+            <label for="css-news" class="form-labels">CSS News</label><br />
 
-          <label for="address">Street Address</label><br />
-          <input
-            type="address"
-            id="address"
-            name="address"
-            value=""
-            placeholder="1234 Your Street"
-          /><br />
+            <input
+              type="checkbox"
+              id="javascript-news"
+              name="selected_news"
+              value=""
+            />
+            <label for="javascript-news" class="form-labels"
+              >Javascript News</label
+            ><br />
 
-          <label for="city">City</label><br />
-          <input
-            type="text"
-            id="city"
-            name="city"
-            value=""
-            placeholder="Your City"
-          /><br />
+            <p class="form-labels">Newsletter format</p>
 
-          <label for="state">State</label><br />
-          <input
-            type="select"
-            id="state"
-            name="state"
-            placeholder="Choose State"
-          /><br />
+            <input
+              type="radio"
+              id="html-format"
+              name="newsletter_format"
+              value=""
+            />
+            <label for="html-format" class="form-labels">HTML</label><br />
 
-          <label for="zip_code">Zip Code</label><br />
-          <input
-            type="text"
-            id="zip_code"
-            name="zip_code"
-            maxlength="5"
-            placeholder="12345"
-          /><br />
-        </fieldset>
+            <input
+              type="radio"
+              id="plain-text-format"
+              name="newsletter_format"
+              value=""
+            />
+            <label for="plain-text-format" class="form-labels">Plain text</label
+            ><br />
 
-        <fieldset>
-          <legend>Newsletter</legend>
-          <p>Select the newsletters you would like to receive</p>
+            <label for="other-topics" class="form-labels"
+              >Other topics you'd like to hear about</label
+            ><br />
+            <input
+              type="textarea"
+              id="other-topics"
+              name="other_topics"
+              placeholder="Other topics.."
+            />
+          </fieldset>
+        </div>
 
-          <input type="checkbox" id="html_news" name="selected_news" value="" />
-          <label for="html_news">HTML News</label><br />
-
-          <input type="checkbox" id="css_news" name="selected_news" value="" />
-          <label for="css_news">CSS News</label><br />
-
-          <input
-            type="checkbox"
-            id="javascript_news"
-            name="selected_news"
-            value=""
-          />
-          <label for="javascript_news">Javascript News</label><br />
-
-          <p>Newsletter format</p>
-
-          <input
-            type="radio"
-            id="html_format"
-            name="newsletter_format"
-            value=""
-          />
-          <label for="html_format">HTML</label><br />
-
-          <input
-            type="radio"
-            id="plain_text_format"
-            name="newsletter_format"
-            value=""
-          />
-          <label for="plain_text_format">Plain text</label><br />
-
-          <label for="other_topics">Other topics you'd like to hear about</label
-          ><br />
-          <input
-            type="textarea"
-            id="other_topics"
-            name="other_topics"
-            placeholder="Other topics.."
-          />
-        </fieldset>
-
-        <button type="submit" value="">Sign Up</button>
+        <div id="button-wrapper">
+          <button id="submit-button" type="submit" value="">Sign Up</button>
+        </div>
       </form>
     </main>
 

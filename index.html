@@ -40,238 +40,271 @@
       <div id="website-title">
         <h1>THE CODE REVIEW</h1>
       </div>
-      <div id="form-intro">
-        <h2>Signup for our newsletter</h2>
-        <p id="form-intro-p">
-          Get the latest news on how your code is doing right in your inbox
-        </p>
+      <div id="flexbox-container-one">
+        <div id="form-intro">
+          <h2>Signup for our newsletter</h2>
+          <p id="form-intro-p">
+            Get the latest news on how your code is doing right in your inbox
+          </p>
+        </div>
       </div>
     </header>
-    <div id="header-divider-one"></div>
-    <div id="header-divider-two"></div>
-    <main>
-      <form action="">
-        <div id="form-section-one-wrapper">
-          <fieldset class="form-sections">
-            <legend>
-              <h2 class="form-section-titles">Contact Information</h2>
-            </legend>
+    <div id="hr-container">
+      <div id="header-divider-one"></div>
+      <div id="header-divider-two"></div>
+    </div>
+    <div id="flexbox-container-two">
+      <main>
+        <form action="">
+          <div id="form-section-one-wrapper">
+            <fieldset class="form-sections">
+              <legend>
+                <h2 class="form-section-titles">Contact Information</h2>
+              </legend>
 
-            <label for="name" class="form-labels">Full Name</label><br />
-            <div id="input-wrapper">
-              <input
-                type="text"
-                id="name"
-                class="contact-info-inputs"
-                name="full_name"
-                value=""
-                placeholder="Your Name"
-                required
-              />
-            </div>
+              <div class="input-wrappers">
+                <label
+                  for="name"
+                  id="input-label-one"
+                  class="form-labels col-one"
+                  >Full Name</label
+                ><br />
+                <div id="input-required-wrapper">
+                  <input
+                    type="text"
+                    id="name"
+                    class="contact-info-inputs col-two"
+                    name="full_name"
+                    placeholder="Your Name"
+                    required
+                  />
+                </div>
+              </div>
 
-            <label for="email" class="form-labels">Email Address</label><br />
-            <div id="input-wrapper">
-              <input
-                type="email"
-                id="email"
-                class="contact-info-inputs"
-                name="email_address"
-                value=""
-                placeholder="example@website.com"
-                required
-              />
-            </div>
+              <div class="input-wrappers">
+                <label
+                  for="email"
+                  id="input-label-one"
+                  class="form-labels col-one"
+                  >Email Address</label
+                ><br />
+                <div id="input-required-wrapper">
+                  <input
+                    type="email"
+                    id="email"
+                    class="contact-info-inputs col-two"
+                    name="email_address"
+                    placeholder="example@website.com"
+                    required
+                  />
+                </div>
+              </div>
 
-            <label for="telephone" class="form-labels">Phone Number</label
-            ><br />
-            <input
-              type="telephone"
-              id="telephone"
-              class="contact-info-inputs"
-              name="telephone_number"
-              value=""
-              placeholder="555-123-4567"
-            /><br />
+              <div class="input-wrappers">
+                <label for="telephone" class="form-labels col-one"
+                  >Phone Number</label
+                ><br />
+                <input
+                  type="telephone"
+                  id="telephone"
+                  class="contact-info-inputs col-two"
+                  name="telephone_number"
+                  placeholder="555-123-4567"
+                /><br />
+              </div>
 
-            <label for="address" class="form-labels">Street Address</label
-            ><br />
-            <input
-              type="address"
-              id="address"
-              class="contact-info-inputs"
-              name="address"
-              value=""
-              placeholder="1234 Your Street"
-            /><br />
+              <div class="input-wrappers">
+                <label for="address" class="form-labels col-one"
+                  >Street Address</label
+                ><br />
+                <input
+                  type="address"
+                  id="address"
+                  class="contact-info-inputs col-two"
+                  name="address"
+                  placeholder="1234 Your Street"
+                /><br />
+              </div>
 
-            <label for="city" class="form-labels">City</label><br />
-            <input
-              type="text"
-              id="city"
-              class="contact-info-inputs"
-              name="city"
-              value=""
-              placeholder="Your City"
-            /><br />
+              <div class="input-wrappers">
+                <label for="city" class="form-labels col-one">City</label><br />
+                <input
+                  type="text"
+                  id="city"
+                  class="contact-info-inputs col-two"
+                  name="city"
+                  placeholder="Your City"
+                /><br />
+              </div>
 
-            <label for="state" class="form-labels">State</label><br />
-            <select id="state" class="contact-info-inputs" name="state">
-              <option value="#">Choose item</option>
-              <option value="AL">Alabama</option>
-              <option value="AK">Alaska</option>
-              <option value="AZ">Arizona</option>
-              <option value="AR">Arkansas</option>
-              <option value="CA">California</option>
-              <option value="CO">Colorado</option>
-              <option value="CT">Connecticut</option>
-              <option value="DE">Delaware</option>
-              <option value="DC">District Of Columbia</option>
-              <option value="FL">Florida</option>
-              <option value="GA">Georgia</option>
-              <option value="HI">Hawaii</option>
-              <option value="ID">Idaho</option>
-              <option value="IL">Illinois</option>
-              <option value="IN">Indiana</option>
-              <option value="IA">Iowa</option>
-              <option value="KS">Kansas</option>
-              <option value="KY">Kentucky</option>
-              <option value="LA">Louisiana</option>
-              <option value="ME">Maine</option>
-              <option value="MD">Maryland</option>
-              <option value="MA">Massachusetts</option>
-              <option value="MI">Michigan</option>
-              <option value="MN">Minnesota</option>
-              <option value="MS">Mississippi</option>
-              <option value="MO">Missouri</option>
-              <option value="MT">Montana</option>
-              <option value="NE">Nebraska</option>
-              <option value="NV">Nevada</option>
-              <option value="NH">New Hampshire</option>
-              <option value="NJ">New Jersey</option>
-              <option value="NM">New Mexico</option>
-              <option value="NY">New York</option>
-              <option value="NC">North Carolina</option>
-              <option value="ND">North Dakota</option>
-              <option value="OH">Ohio</option>
-              <option value="OK">Oklahoma</option>
-              <option value="OR">Oregon</option>
-              <option value="PA">Pennsylvania</option>
-              <option value="RI">Rhode Island</option>
-              <option value="SC">South Carolina</option>
-              <option value="SD">South Dakota</option>
-              <option value="TN">Tennessee</option>
-              <option value="TX">Texas</option>
-              <option value="UT">Utah</option>
-              <option value="VT">Vermont</option>
-              <option value="VA">Virginia</option>
-              <option value="WA">Washington</option>
-              <option value="WV">West Virginia</option>
-              <option value="WI">Wisconsin</option>
-              <option value="WY">Wyoming</option></select
-            ><br />
+              <div class="input-wrappers">
+                <label for="state" class="form-labels col-one">State</label
+                ><br />
+                <select
+                  id="state"
+                  class="contact-info-inputs col-two"
+                  name="state"
+                >
+                  <option value="#">Choose item</option>
+                  <option value="AL">Alabama</option>
+                  <option value="AK">Alaska</option>
+                  <option value="AZ">Arizona</option>
+                  <option value="AR">Arkansas</option>
+                  <option value="CA">California</option>
+                  <option value="CO">Colorado</option>
+                  <option value="CT">Connecticut</option>
+                  <option value="DE">Delaware</option>
+                  <option value="DC">District Of Columbia</option>
+                  <option value="FL">Florida</option>
+                  <option value="GA">Georgia</option>
+                  <option value="HI">Hawaii</option>
+                  <option value="ID">Idaho</option>
+                  <option value="IL">Illinois</option>
+                  <option value="IN">Indiana</option>
+                  <option value="IA">Iowa</option>
+                  <option value="KS">Kansas</option>
+                  <option value="KY">Kentucky</option>
+                  <option value="LA">Louisiana</option>
+                  <option value="ME">Maine</option>
+                  <option value="MD">Maryland</option>
+                  <option value="MA">Massachusetts</option>
+                  <option value="MI">Michigan</option>
+                  <option value="MN">Minnesota</option>
+                  <option value="MS">Mississippi</option>
+                  <option value="MO">Missouri</option>
+                  <option value="MT">Montana</option>
+                  <option value="NE">Nebraska</option>
+                  <option value="NV">Nevada</option>
+                  <option value="NH">New Hampshire</option>
+                  <option value="NJ">New Jersey</option>
+                  <option value="NM">New Mexico</option>
+                  <option value="NY">New York</option>
+                  <option value="NC">North Carolina</option>
+                  <option value="ND">North Dakota</option>
+                  <option value="OH">Ohio</option>
+                  <option value="OK">Oklahoma</option>
+                  <option value="OR">Oregon</option>
+                  <option value="PA">Pennsylvania</option>
+                  <option value="RI">Rhode Island</option>
+                  <option value="SC">South Carolina</option>
+                  <option value="SD">South Dakota</option>
+                  <option value="TN">Tennessee</option>
+                  <option value="TX">Texas</option>
+                  <option value="UT">Utah</option>
+                  <option value="VT">Vermont</option>
+                  <option value="VA">Virginia</option>
+                  <option value="WA">Washington</option>
+                  <option value="WV">West Virginia</option>
+                  <option value="WI">Wisconsin</option>
+                  <option value="WY">Wyoming</option></select
+                ><br />
+              </div>
 
-            <label for="zip-code" class="form-labels">Zip Code</label><br />
-            <input
-              type="text"
-              id="zip-code"
-              class="contact-info-inputs"
-              name="zip_code"
-              maxlength="5"
-              placeholder="12345"
-            /><br />
-          </fieldset>
-        </div>
+              <div class="input-wrappers">
+                <label
+                  for="zip-code"
+                  id="zip-code-title"
+                  class="form-labels col-one"
+                  >Zip Code</label
+                ><br />
+                <input
+                  type="text"
+                  id="zip-code"
+                  class="contact-info-inputs col-two"
+                  name="zip_code"
+                  maxlength="5"
+                  placeholder="12345"
+                /><br />
+              </div>
+            </fieldset>
+          </div>
 
-        <div id="form-section-two-wrapper">
-          <fieldset class="form-sections">
-            <legend>
-              <h2 id="newsletter-title" class="form-section-titles">
-                Newsletter
-              </h2>
-            </legend>
-            <p class="form-labels">
-              Select the newsletters you would like to receive
-            </p>
+          <div id="form-section-two-wrapper">
+            <fieldset class="form-sections">
+              <legend>
+                <h2 id="newsletter-title" class="form-section-titles">
+                  Newsletter
+                </h2>
+              </legend>
+              <p class="form-labels">
+                Select the newsletters you would like to receive
+              </p>
 
-            <div class="check-radio-wrappers">
-              <input
-                type="checkbox"
-                id="html-news"
-                class="check-radio-inputs"
-                name="selected_news"
-                value=""
-              />
-              <label for="html-news" class="form-labels">HTML News</label><br />
-            </div>
+              <div class="check-radio-wrappers">
+                <input
+                  type="checkbox"
+                  id="html-news"
+                  class="check-radio-inputs"
+                  name="selected_news"
+                />
+                <label for="html-news" class="form-labels">HTML News</label
+                ><br />
+              </div>
 
-            <div class="check-radio-wrappers">
-              <input
-                type="checkbox"
-                id="css-news"
-                class="check-radio-inputs"
-                name="selected_news"
-                value=""
-              />
-              <label for="css-news" class="form-labels">CSS News</label><br />
-            </div>
+              <div class="check-radio-wrappers">
+                <input
+                  type="checkbox"
+                  id="css-news"
+                  class="check-radio-inputs"
+                  name="selected_news"
+                />
+                <label for="css-news" class="form-labels">CSS News</label><br />
+              </div>
 
-            <div class="check-radio-wrappers">
-              <input
-                type="checkbox"
-                id="javascript-news"
-                class="check-radio-inputs"
-                name="selected_news"
-                value=""
-              />
-              <label for="javascript-news" class="form-labels"
-                >Javascript News</label
+              <div class="check-radio-wrappers">
+                <input
+                  type="checkbox"
+                  id="javascript-news"
+                  class="check-radio-inputs"
+                  name="selected_news"
+                />
+                <label for="javascript-news" class="form-labels"
+                  >Javascript News</label
+                ><br />
+              </div>
+
+              <p class="form-labels">Newsletter format</p>
+
+              <div class="check-radio-wrappers">
+                <input
+                  type="radio"
+                  id="html-format"
+                  class="check-radio-inputs"
+                  name="newsletter_format"
+                />
+                <label for="html-format" class="form-labels">HTML</label><br />
+              </div>
+
+              <div id="last-check-radio-wrapper" class="check-radio-wrappers">
+                <input
+                  type="radio"
+                  id="plain-text-format"
+                  class="check-radio-inputs"
+                  name="newsletter_format"
+                />
+                <label for="plain-text-format" class="form-labels"
+                  >Plain text</label
+                ><br />
+              </div>
+
+              <label for="other-topics" class="form-labels"
+                >Other topics you'd like to hear about</label
               ><br />
-            </div>
+              <textarea
+                id="other-topics"
+                name="other_topics"
+                rows="8"
+                placeholder="Other topics..."
+              ></textarea>
+            </fieldset>
+          </div>
 
-            <p class="form-labels">Newsletter format</p>
-
-            <div class="check-radio-wrappers">
-              <input
-                type="radio"
-                id="html-format"
-                class="check-radio-inputs"
-                name="newsletter_format"
-                value=""
-              />
-              <label for="html-format" class="form-labels">HTML</label><br />
-            </div>
-
-            <div id="last-check-radio-wrapper" class="check-radio-wrappers">
-              <input
-                type="radio"
-                id="plain-text-format"
-                class="check-radio-inputs"
-                name="newsletter_format"
-                value=""
-              />
-              <label for="plain-text-format" class="form-labels"
-                >Plain text</label
-              ><br />
-            </div>
-
-            <label for="other-topics" class="form-labels"
-              >Other topics you'd like to hear about</label
-            ><br />
-            <textarea
-              id="other-topics"
-              name="other_topics"
-              rows="8"
-              placeholder="Other topics..."
-            ></textarea>
-          </fieldset>
-        </div>
-
-        <div id="button-wrapper">
-          <button id="submit-button" type="submit" value="">Sign Up</button>
-        </div>
-      </form>
-    </main>
+          <div id="button-wrapper">
+            <button id="submit-button" type="submit">Sign Up</button>
+          </div>
+        </form>
+      </main>
+    </div>
 
     <footer>
       <p><em>Copyright The Code Review</em></p>

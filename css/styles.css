@@ -37,11 +37,11 @@
   Required text for inside input fields
 =======================================*/
 
-#input-wrapper {
+#input-required-wrapper {
   position: relative;
 }
 
-#input-wrapper::after {
+#input-required-wrapper::after {
   content: "Required";
   position: relative;
   left: 345px;
@@ -65,6 +65,10 @@ body {
   color: #fff;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 header {
   padding-bottom: 35px;
 }
@@ -79,11 +83,11 @@ header {
 #form-intro {
   color: #363636;
   text-align: center;
-  padding: 25px 0 1px;
+  padding: 45px 0 1px;
 }
 
 #form-intro-p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   padding: 0px 30px;
   font-weight: 300;
 }
@@ -124,20 +128,11 @@ button {
   width: 100%;
 }
 
-/* .contact-info-inputs::placeholder,
-#other-topics::placeholder {
-  padding-left: 5px;
-} */
-
 .contact-info-inputs {
   height: 70px;
   margin: 22px 0 20px 0;
   font-size: 1.2rem;
   padding-left: 10px;
-}
-
-#choose-item {
-  color: ##757575;
 }
 
 #zip-code {
@@ -188,9 +183,141 @@ footer {
   padding: 10px 0px;
 }
 
+.contact-info-inputs:focus,
+#other-topics:focus {
+  outline: 3px solid #cca43b;
+}
+
+#submit-button:focus {
+  outline: 5px solid #242f40;
+  background-color: #cca43b;
+  color: #242f40;
+}
+
 /* =====================================
   Media Queries
 =======================================*/
 
 @media only screen and (min-width: 768px) {
+  #flexbox-container-one,
+  #flexbox-container-two {
+    display: flex;
+    justify-content: center;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  #hr-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  main {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .form-sections {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .form-labels {
+    font-size: 0.8rem;
+  }
+
+  .input-wrappers {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 600px;
+    height: 80px;
+  }
+
+  #input-required-wrapper {
+    height: 70px;
+    margin: 1px 0px 1px auto;
+  }
+
+  #input-required-wrapper::after {
+    font-size: 0.8rem;
+    left: 375px;
+    top: -34px;
+  }
+
+  .contact-info-inputs {
+    font-size: 0.8rem;
+    margin: 1px 0px 1px auto;
+    width: 440px;
+    height: 46px;
+  }
+
+  .col-one {
+    margin: 1px auto 1px 0;
+  }
+
+  #input-label-one {
+    padding-right: 78px;
+  }
+
+  #name {
+    margin-top: 11px;
+  }
+
+  #email {
+    margin-top: 11px;
+  }
+
+  #zip-code-title {
+    margin-right: 0px;
+  }
+
+  #zip-code {
+    width: 25%;
+    justify-content: flex-start;
+    margin-left: -510px;
+  }
+
+  #other-topics {
+    font-size: 0.8rem;
+  }
+
+  .check-radio-inputs {
+    accent-color: #cca43b;
+  }
+
+  #submit-button:hover {
+    border: 5px solid #242f40;
+    color: #242f40;
+    background-color: #cca43b;
+    transition: ease;
+  }
+}
+
+@media only screen and (min-width: 320px) {
+  #flexbox-container-one,
+  #flexbox-container-two {
+    display: flex;
+    justify-content: center;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  #hr-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  main {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 }

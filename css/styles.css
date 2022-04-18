@@ -220,10 +220,13 @@ footer {
     margin-right: 0px;
   }
 
+  .brs {
+    display: none;
+  }
+
   .form-sections {
     display: flex;
     flex-direction: column;
-    max-width: 600px;
     margin: 0 auto;
   }
 
@@ -233,16 +236,14 @@ footer {
 
   .input-wrappers {
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    max-width: 600px;
     height: 80px;
   }
 
   .input-required-wrapper {
     height: 70px;
-    margin: 1px 0px 1px auto;
+    width: 440px;
   }
 
   .input-required-wrapper::after {
@@ -254,16 +255,11 @@ footer {
   .contact-info-inputs {
     font-size: 0.8rem;
     margin: 1px 0px 1px auto;
-    width: 440px;
+    width: 400px;
     height: 46px;
   }
 
-  .col-one {
-    margin: 1px auto 1px 0;
-  }
-
   .input-label-one {
-    padding-right: 78px;
     font-size: 0.8rem;
     font-weight: 300;
   }
@@ -282,8 +278,7 @@ footer {
 
   #zip-code {
     width: 25%;
-    justify-content: flex-start;
-    margin-left: -510px;
+    margin: 1px 268px 1px auto;
   }
 
   #other-topics {
@@ -299,6 +294,11 @@ footer {
     color: #242f40;
     background-color: #cca43b;
     transition: ease;
+  }
+
+  .col-one,
+  .col-two {
+    display: flex;
   }
 }
 

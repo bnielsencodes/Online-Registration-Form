@@ -81,9 +81,13 @@ form {
   padding: 0;
 }
 
-#form-section-one-wrapper {
+#form-section-one-wrapper,
+#form-section-two-wrapper {
   background-color: #363636;
   border-radius: 5px;
+  box-shadow: 6px 5px 9px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 6px 5px 9px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 6px 5px 9px 0px rgba(0, 0, 0, 0.75);
 }
 
 .form-labels {
@@ -121,8 +125,6 @@ button {
 }
 
 #form-section-two-wrapper {
-  background-color: #363636;
-  border-radius: 5px;
   margin-top: 25px;
 }
 
@@ -167,6 +169,12 @@ footer {
 .contact-info-inputs:focus,
 #other-topics:focus {
   outline: 3px solid #cca43b;
+}
+
+button {
+  box-shadow: 6px 5px 9px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 6px 5px 9px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 6px 5px 9px 0px rgba(0, 0, 0, 0.75);
 }
 
 #submit-button:focus {
